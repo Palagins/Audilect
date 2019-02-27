@@ -6,12 +6,10 @@ body {
 button {
   width: 100px;
   color: white;
-  text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 6px black;
   font-weight: 600;
   padding: 14px 20px;
-  margin: 8px 0;
   border: none;
-  cursor: pointer;
   background-color: #6ef9eb;
   margin: 15px;
 }
@@ -33,9 +31,13 @@ header {
   background-color: #2aa296;
 }
 
-img.avatar {
-  width: 10%;
-  border-radius: 50%;
+footer {
+  background: #2aa296;
+}
+
+p {
+  font-weight: bolder;
+  margin: 0px 20px;
 }
 
 span.psw {
@@ -67,6 +69,10 @@ span.psw {
 
 .form {
   margin: 0px 20px;
+}
+
+#formfoot {
+  background-color: #f1f1f1;
 }
 
 .imgcontainer {
@@ -145,12 +151,6 @@ span.psw {
   background-color: inherit;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 
 .background-jpg1 {
@@ -194,12 +194,25 @@ span.psw {
 }
 /*Jumbotron end*/
 
-.map {
-  margin-bottom: 16px;
+#map {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.foot {
-  background: #2aa296;
+#kart {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.icon {
+  width: 70px;
+}
+
+.text {
+  width: 100%;
+  text-align: end;
+  padding: 10px 10px;
 }
 
 @media only screen and (max-width: 319px) {
@@ -209,6 +222,12 @@ span.psw {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  button {
+    margin: 10px 2px;
+    padding: 6px 2px;
+    width: 55px;
+  }
+
   .jumbotron {
     height: 30rem;
     padding-top: 8rem;
@@ -222,17 +241,21 @@ span.psw {
     font-size: 1rem;
   }
 
-  .map {
+  #kart {
     display: none;
     }
 
   #maps {
-    height: 400px;
+    height: 350px;
     width: 100%;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 620px) {
+  button {
+    padding: 8px 0px;
+  }
+
   .jumbotron {
     height: 36rem;
     padding-top: 9rem;
@@ -246,7 +269,7 @@ span.psw {
     font-size: 1.2rem;
   }
 
-  .map {
+  #kart {
     display: none;
     }
 

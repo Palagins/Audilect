@@ -34,7 +34,9 @@
     <header>
       <div class="container">
         <img class="logo" src="./resources/logo/generated_1.svg">
+
         <nav class="buttons">
+          <p>Login and get the app ...</p>
           <button onclick="showLogin()">Login</button>
           <button onclick="showSignIn()">Sign In</button>
         </div>
@@ -47,7 +49,7 @@
         <form class="modal-content animate" action="/action_page.php">
           <div class="imgcontainer">
             <span onclick="closeLogin()" class="close" title="Close Modal">&times;</span>
-            <img src="./resources/logo/logo_sm.png" alt="Avatar" class="avatar">
+            <i class="fas fa-user-check fa-3x"></i>
           </div>
 
           <div class="form">
@@ -63,7 +65,7 @@
             </label>
           </div>
 
-          <div class="form" style="background-color:#f1f1f1">
+          <div class="form" id="formfoot">
             <button type="button" onclick="closeLogin()" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
@@ -77,7 +79,7 @@
         <form class="modal-content animate" action="/action_page.php">
           <div class="imgcontainer">
             <span onclick="closeSignIn()" class="close" title="Close Modal">&times;</span>
-            <img src="./resources/logo/logo_sm.png" alt="Avatar" class="avatar">
+            <i class="fas fa-user-edit fa-3x"></i>
           </div>
 
           <div class="form">
@@ -96,7 +98,7 @@
             </label>
           </div>
 
-          <div class="form" style="background-color:#f1f1f1">
+          <div class="form" id="formfoot">
             <button type="button" onclick="closeSignIn()" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
           </div>
@@ -130,18 +132,28 @@
         </div>
       </div>
 
-      <div class="container">
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.109923444915!2d-2.146405983912947!3d57.1180842933353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d3af251%3A0x4bc350a0164580d0!2sGarthdee+House%2C+Aberdeen+AB10+7QB%2C+Apvienot%C4%81+Karaliste!5e0!3m2!1slv!2sdk!4v1551209592569" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="container" id="map">
+
+        <iframe id="kart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.109923444915!2d-2.146405983912947!3d57.1180842933353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d3af251%3A0x4bc350a0164580d0!2sGarthdee+House%2C+Aberdeen+AB10+7QB%2C+Apvienot%C4%81+Karaliste!5e0!3m2!1slv!2sdk!4v1551209592569" allowfullscreen></iframe>
 
         <div id="maps"></div>
-
         <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWJUICBHipV2ZxF8nB88gSfRO2D3U74b4&callback=initMap">
         </script>
+
       </div>
 
-    <footer class="foot">
-
+    <footer>
+      <div class="container">
+        <nav class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fas fa-print"></i>
+        </nav>
+        <div class="text">
+          <p>© 2019 Audilect - Future Innovations</p>
+        </div>
+      </div>
     </footer>
 
   </body>
