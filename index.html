@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audilect | Silently Clear</title>
+    <link rel="icon" href="./resources/logo/logo.ico" type="image/x-icon"/>
+
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="./resources/w3/w3.css" type="text/css" rel="stylesheet"/>
+    <link href="./resources/slick/slick.css" type="text/css" rel="stylesheet"/>
+    <link href="./resources/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet"/>
+    <!--<link href="./resources/qunit/qunit-2.9.1.css" type="text/css" rel="stylesheet"/>-->
+
+    <script src="./resources/babel/babel.min.js" type="text/javascript"></script>
+    <script src="./resources/vue/vue.min.js" type="text/javascript"></script>
+    <script src="./resources/w3/w3.js" type="text/javascript"></script>
+    <script src="./resources/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="./resources/slick/slick.min.js" type="text/javascript"></script>
+    <script src="./resources/bootstrap-4.3.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--<script src="./resources/qunit/qunit-2.9.1.js" type="text/javascript"></script>-->
+    <!--<script src="./resources/js/test.js" type="text/javascript"></script>-->
+
+    <script src="./resources/js/map.js" type="text/javascript"></script>
+    <script src="./resources/js/main.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <img class="logo" src="./resources/logo/generated_1.svg">
+        <nav class="buttons">
+          <button onclick="showLogin()">Login</button>
+          <button onclick="showSignIn()">Sign In</button>
+        </div>
+      </div>
+    </header>
+
+      <!-- Login Form -->
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="closeLogin()" class="close" title="Close Modal">&times;</span>
+            <img src="./resources/logo/logo_sm.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="form">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="form" style="background-color:#f1f1f1">
+            <button type="button" onclick="closeLogin()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+
+      <!-- Sign In Form -->
+      <div id="id02" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="closeSignIn()" class="close" title="Close Modal">&times;</span>
+            <img src="./resources/logo/logo_sm.png" alt="Avatar" class="avatar">
+          </div>
+
+          <div class="form">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+
+          <div class="form" style="background-color:#f1f1f1">
+            <button type="button" onclick="closeSignIn()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="carousel">
+        <div class="jumbotron background-jpg1">
+          <div class="container-fluid">
+            <h1>Audilect</h1>
+            <h4>We are here to connect people</h4>
+          </div>
+        </div>
+        <div class="jumbotron background-jpg2">
+          <div class="container-fluid">
+            <h1>Audilect</h1>
+            <h4>In United Kingdom from mild to severe deafness suffer 7.5 million people (of which about 6.5 million are over 60 years of age)</h4>
+          </div>
+        </div>
+        <div class="jumbotron background-jpg3">
+          <div class="container-fluid">
+            <h1>Audilect</h1>
+            <h4>In Europe, about 71 million adults aged 18 to 80 years have a hearing loss</h4>
+          </div>
+        </div>
+        <div class="jumbotron background-jpg4">
+          <div class="container-fluid">
+            <h1>Audilect</h1>
+            <h4>In Germany alone 10.2 million and France 7.6 million people</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.109923444915!2d-2.146405983912947!3d57.1180842933353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488410483d3af251%3A0x4bc350a0164580d0!2sGarthdee+House%2C+Aberdeen+AB10+7QB%2C+Apvienot%C4%81+Karaliste!5e0!3m2!1slv!2sdk!4v1551209592569" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <div id="maps"></div>
+
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWJUICBHipV2ZxF8nB88gSfRO2D3U74b4&callback=initMap">
+        </script>
+      </div>
+
+    <footer class="foot">
+
+    </footer>
+
+  </body>
+
+</html>
