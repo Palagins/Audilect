@@ -205,7 +205,11 @@ span.psw {
 }
 
 .icon {
-  width: 70px;
+  width: 120px;
+}
+
+.icon i {
+  margin-left: 6px;
 }
 
 .text {
@@ -224,7 +228,6 @@ span.psw {
   button {
     margin: 10px 2px;
     padding: 6px 2px;
-    width: 55px;
   }
 
   .jumbotron {
